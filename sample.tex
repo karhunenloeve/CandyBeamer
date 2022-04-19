@@ -1,0 +1,147 @@
+\documentclass[aspectratio=169,xcolor=dvipsnames,12pt]{beamer}
+\usetheme{Candy}
+
+\usepackage[english]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{euler}
+\usepackage{pifont}
+\usepackage{fontawesome}
+\usepackage{academicons}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+
+\title[short title]{Candy Beamer Theme}
+\subtitle{Subtitle}
+
+\author[LuMe]{Luciano Melodia}
+
+\institute[FAU]
+{
+    Department of Mathematics \\
+    Friedrich-Alexander Universität Erlangen-Nürnberg
+}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+    \tableofcontents
+\end{frame}
+
+\section{First Section}
+
+\begin{frame}{Bullet Points}
+    \begin{itemize}
+        \item Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        \item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
+        \item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
+        \item Nam cursus est eget velit posuere pellentesque
+        \item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Blocks of Highlighted Text}
+    In this slide, some important text will be \alert{highlighted} because it's important. Please, don't abuse it.
+
+    \begin{block}{Block}
+        Sample text in Apricot box.
+    \end{block}
+
+    \begin{alertblock}{Alertblock}
+        Sample text in Melon box.
+    \end{alertblock}
+
+    \begin{examples}
+        Sample text in Peach box. The title of the block is ``Examples".
+    \end{examples}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Multiple Columns}
+    \begin{columns}[c]
+        \column{.45\textwidth}
+        \textbf{Heading}
+        \begin{enumerate}
+            \item Statement
+            \item Explanation
+            \item Example
+        \end{enumerate}
+
+        \column{.5\textwidth}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+    \end{columns}
+\end{frame}
+
+\section{Second Section}
+
+\begin{frame}{Table}
+    \begin{table}
+        \begin{tabular}{l l l}
+            \toprule
+            \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2} \\
+            \midrule
+            Treatment 1         & 0.0003262           & 0.562               \\
+            Treatment 2         & 0.0015681           & 0.910               \\
+            Treatment 3         & 0.0009271           & 0.296               \\
+            \bottomrule
+        \end{tabular}
+        \caption{Table caption}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Theorem}
+    \begin{theorem}[Fun with series]
+        $\sin x = \sum\limits_{n = 1}^\infty  {\frac{{\left( { - 1} \right)^{n - 1} x^{2n - 1} }}{{\left( {2n - 1} \right)!}}}$
+    \end{theorem}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Figure}
+    \begin{figure}
+      \input{neural}
+      \caption{Wow, just three hidden neurons!}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[fragile]
+    \frametitle{Citation}
+    An example of the \verb|\cite| command to cite within the presentation:\\~
+
+    This statement requires citation \cite{p1}.\footnote{We inserted even an aligned footnote, that looks just awesome!}
+\end{frame}
+
+
+\begin{frame}{References}
+    \footnotesize{
+        \begin{thebibliography}{99}
+          \bibitem[Melodia, 2021]{p1} Luciano Melodia, Richard Lenz (2021)
+          \newblock Homological Time Series Analysis of Sensor Signals from Power Plants
+          \newblock \emph{Machine Learning for Irregular Time Series}, 45 -- 62.
+          \bibitem[Melodia, 2021]{p1} Luciano Melodia, Richard Lenz (2021)
+          \newblock Estimate of the Neural Network Dimension Using Algebraic Topology and Lie Theory
+          \newblock \emph{Image Mining: Theory and Applications} (12665), 15 -- 29.
+          \bibitem[Melodia, 2021]{p1} Luciano Melodia, Richard Lenz (2020)
+          \newblock Persistent Homology as Stopping-Criterion for Voronoi Interpolation
+          \newblock \emph{International Workshop on Combinatorial Image Analysis} (12148), 29 -- 44.
+        \end{thebibliography}
+    }
+\end{frame}
+
+
+\begin{frame}
+    \Huge{\centerline{\textbf{The End}}}
+\end{frame}
+
+
+\end{document}
